@@ -1,9 +1,10 @@
-
+// pages we are importing 
+import Aboutme from "./pages/Aboutme"
 
 function App() {
   return (
     <div className="App">
-      <h1>HELLO WORLD</h1>
+        <Aboutme/>
        
     </div>
   );
