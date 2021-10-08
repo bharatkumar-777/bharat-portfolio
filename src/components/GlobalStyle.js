@@ -1,8 +1,9 @@
 import {createGlobalStyle} from 'styled-components';
 
 const Global=createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap');
 *
 {
     box-sizing: border-box;
@@ -14,13 +15,13 @@ body
 {
   /* background-color: #1b1b1b; */
   background-image: linear-gradient(to right , #2b2b2b, #1b1b1b);
-  font-family: "Roboto" , sans-serif;
+  font-family: "Inter";
 
 }
 
 button
 {
-    font-weight: bold;
+    font-weight:bold;
     cursor:pointer;
     padding: 0.6rem 1.5rem;
     font-size:1.1rem;
@@ -36,17 +37,19 @@ button
 }
 h2
 {
-    font-weight: lighter;
+    font-weight: 400;
     font-size: 2.4rem;
     word-spacing: 1.5px;
-    letter-spacing: 1.2px;
+    /* letter-spacing: 1.2px; */
     line-height: 1.4;
     span
     {
-        font-weight: 700;
+        font-weight: 800;
         color: #38fff5;
 
+
     }
+   
 }
 
 
@@ -68,11 +71,9 @@ p
     color:#ccc;
     font-size: 1rem;
     line-height: 1.7;
-    word-spacing: 1.8px
-    letter-spacing:1px;
+    word-spacing: 1.8px;
+    letter-spacing: 1px;
 
-}
-
-`
+}`;
 
 export default Global;

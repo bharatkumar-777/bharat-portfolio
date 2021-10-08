@@ -2,7 +2,12 @@ import React from 'react';
 import PrinceMirror from '../img/Prince-mirror-selfie-bw-small.png'
 
 // styled component
-import styled from 'styled-components';
+// import styled from 'styled-components';
+
+// importing style files
+import {About,Description,Hide,Image} from '../styles';
+
+
 
 const Aboutsection = () => {
     return (
@@ -40,53 +45,4 @@ const Aboutsection = () => {
 }
 
 
-const About=styled.div`
-   min-height:90vh;
-   display:flex;
-   align-items:center;
-   justify-content: space-between;
-   
-   padding: 5rem 10rem;
-   color:white;
-   /* background-color: #161616; */
-
-
-
-`;
-
-
-const Description = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-  h2
-  {
-      font-weight: lighter;
-  }
-
-`
-
-
-const Image=styled.div`
-   flex: 1;
-   display: flex;
-   justify-content:center;
-   align-items: center;
-   overflow: hidden;
-   img
-   {
-       /* margin:0 auto; */
-       width:80%;
-       height: 80vh;
-       object-fit: cover;
-       object-position: top;
-       
-    }
-
-`;
-
-const Hide=styled.div`
-  overflow: hidden;
-  
-
-`
 export default Aboutsection
