@@ -87,7 +87,7 @@ const ImageInfo=styled.div`
         span
         {
             display: block;
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             color: white;
         }
     }
