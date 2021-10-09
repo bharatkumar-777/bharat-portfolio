@@ -63,6 +63,8 @@ h4
 {
     font-weight: bolder;
     color:#38fff5;
+    font-size: 2rem;
+
 }
 
 p
