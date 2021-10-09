@@ -38,7 +38,7 @@ button
 h2
 {
     font-weight: 400;
-    font-size: 2.4rem;
+    /* font-size: 2.2rem; */
     word-spacing: 1.5px;
     /* letter-spacing: 1.2px; */
     line-height: 1.4;
@@ -46,6 +46,7 @@ h2
     {
         font-weight: 800;
         color: #38fff5;
+        font-size:3.8rem;
 
 
     }

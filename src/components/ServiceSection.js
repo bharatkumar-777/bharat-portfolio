@@ -78,18 +78,18 @@ const ServiceSection = () => {
 const  Services= styled(About)`
     display:flex;
     justify-content:space-between;
-   
+    width:100%;
     
     h2
     {
         padding-bottom:3rem;
         span{
         color: #ff9000;
-        font-weight: black;
+        font-weight: 800;
         display: block;
-        font-size: 140%;
+        font-size: 180%;
         }
-        letter-spacing: 4px;
+        letter-spacing: 2px;
         word-spacing:2px;
         text-transform: capitalize;
       
@@ -99,14 +99,15 @@ const  Services= styled(About)`
     {
         width:100%;
         padding : 2rem 0rem 4rem 0rem;
-        text-align:justify;
+        text-align:left;
+        color:white
     }
 
 `
 
 const Cards = styled.div`
   display:flex;
-  -webkit-flex-wrap: wrap;
+  /* -webkit-flex-wrap: wrap; */
   flex-wrap:wrap;
   width:100%;
   /* background-color:white; */

@@ -5,7 +5,7 @@ export const About=styled.div`
 min-height:90vh;
 display:flex;
 align-items:center;
-justify-content: space-between;
+justify-content: center;
 
 padding: 5rem 10rem;
 color:white;
@@ -17,10 +17,11 @@ color:white;
 
 
 export const Description = styled.div`
-flex: 1;
+flex: 1 0 50%;
 padding-right: 5rem;
 h2
 {
+   font-size:2.2rem;
    font-weight: 400;
 }
 
@@ -28,16 +29,17 @@ h2
 
 
 export const Image=styled.div`
-flex: 1;
+flex: 1 0 50%;
 display: flex;
 justify-content:center;
 align-items: center;
 overflow: hidden;
+
 img
 {
     /* margin:0 auto; */
     width:70%;
-    height: 80vh;
+    height: 70vh;
     object-fit: cover;
     object-position: top;
     

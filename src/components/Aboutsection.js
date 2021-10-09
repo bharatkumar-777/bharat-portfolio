@@ -16,13 +16,13 @@ const Aboutsection = () => {
                 <div className="title">
                     <Hide>
                         <h2>
-                        My Name is <span>BHARAT</span> and i am
+                        I am  <span>BHARAT</span> and i am 
                         </h2>
                         
                     </Hide>
                     <Hide>
                         <h2>
-                        a <span>FULL STACK</span> Developer
+                        a <span>FULL STACK </span> Dev.
                         </h2>
                          
                     </Hide>

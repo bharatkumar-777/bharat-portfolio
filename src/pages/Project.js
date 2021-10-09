@@ -19,7 +19,7 @@ const Project = () => {
                 a social media application
                 </Title>
             <div className="line"></div>
-            <Link>
+            <Link to="/projects/amigo">
             <img src={athlete} alt="athlete" />
             </Link>
             </Movie>
@@ -28,7 +28,7 @@ const Project = () => {
                 <span>Jibeer Jabber</span> 
                 real time text message application</Title>
             <div className="line"></div>
-            <Link>
+            <Link to="/projects/jibjab">
             <img src={goodtimes} alt="athlete" />
             </Link>
             </Movie>
@@ -38,7 +38,7 @@ const Project = () => {
                 <span>Hunch</span> 
                 simple ui music player</Title>
             <div className="line"></div>
-            <Link>
+            <Link to="/projects/hunch">
             <img src={racer} alt="athlete" />
             </Link>
             </Movie>

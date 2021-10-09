@@ -1,6 +1,7 @@
 // pages we are importing 
 import Aboutme from "./pages/Aboutme"
 import Nav from './components/Navbar'
+import WorkDetail from "./pages/WorkDetail";
 
 import Contact from './pages/Contact';
 import Project from './pages/Project';
@@ -19,11 +20,14 @@ function App() {
         <Route path="/" exact>
         <Aboutme/>
         </Route>
-        <Route path="/contact" exact>
-        <Contact/>
-        </Route>
         <Route path="/projects" exact>
         <Project/>
+        </Route>
+        <Route path="/projects/:id">
+          <WorkDetail/>
+        </Route>
+        <Route path="/contact" exact>
+        <Contact/>
         </Route>
         </Switch>
        
