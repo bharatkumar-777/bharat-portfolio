@@ -82,7 +82,7 @@ const ImageInfo=styled.div`
     
     h3
     {
-        font-size: 5rem;
+        font-size: 5.5rem;
         color:orange;
         span
         {
