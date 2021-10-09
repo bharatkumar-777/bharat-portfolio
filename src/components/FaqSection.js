@@ -87,6 +87,7 @@ h2
     {
         display:block;
         font-size:200%;
+        color:#ff9000;
     }
 
 }
