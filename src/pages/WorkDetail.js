@@ -74,7 +74,7 @@ const WorkDetail = () => {
 
 
 const ImageInfo=styled.div`
-    paddings:5rem;
+    padding:5rem;
     flex: 1;
     display: flex;
     flex-direction: column;
