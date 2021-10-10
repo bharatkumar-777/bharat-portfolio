@@ -11,7 +11,7 @@ import racer from "../img/theracer-small-bharat.png";
 
 // animations
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animate";
+import { pageAnimation,fade,zoomAnim as zoom ,slider} from "../animate";
 
 const Project = () => {
   return (
@@ -24,33 +24,36 @@ const Project = () => {
     >
       <h3>click the image for more details</h3>
       <Movie>
-        <Title>
+        <Title variants={fade}>
           <span>Amigo</span>a social media application
         </Title>
-        <div className="line"></div>
+        <motion.div className="line" variants={slider}></motion.div>
         <Link to="/projects/amigo">
-          <img src={athlete} alt="athlete" />
+          <Hide>
+          <motion.img src={athlete} alt="athlete" variants={zoom}/>
+          </Hide>
         </Link>
+         
       </Movie>
       <Movie>
-        <Title>
+        <Title variants={fade}>
           <span>Jibber Jabber</span>
           real time text message application
         </Title>
-        <div className="line"></div>
+        <motion.div className="line"></motion.div>
         <Link to="/projects/jibjab">
-          <img src={goodtimes} alt="athlete" />
+          <motion.img src={goodtimes} alt="athlete" variants={zoom}/>
         </Link>
       </Movie>
 
       <Movie>
-        <Title>
+        <Title variants={fade}>
           <span>Hunch</span>
           simple ui music player
         </Title>
-        <div className="line"></div>
+        <motion.div className="line"></motion.div>
         <Link to="/projects/hunch">
-          <img src={racer} alt="athlete" />
+          <motion.img src={racer} alt="athlete" variants={zoom}/>
         </Link>
       </Movie>
     </Work>
@@ -98,7 +101,7 @@ const Movie = styled.div`
   }
 `;
 
-const Title = styled.h1`
+const Title = styled(motion.h1)`
   padding: 2rem 0rem;
   width: 80%;
   font-weight: 300;
@@ -114,5 +117,9 @@ const Title = styled.h1`
     text-transform: uppercase;
   }
 `;
+
+const Hide= styled.div`
+  overflow: hidden;
+`
 
 export default Project;
