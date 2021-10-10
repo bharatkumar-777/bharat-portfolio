@@ -9,14 +9,21 @@ import Project from './pages/Project';
 // global style;
 import Global from './components/GlobalStyle'
 
-import {Route,Switch} from 'react-router-dom';
+import {Route,Switch,useLocation} from 'react-router-dom';
+
+// animation
+import {AnimatePresence} from 'framer-motion'
 
 function App() {
+
+  const location = useLocation();
+  console.log(location);
   return (
     <div className="App">
         <Global/>
         <Nav/>
-        <Switch>
+        <AnimatePresence exitBeforeEnter>
+        <Switch key={location.pathname} location={location}>
         <Route path="/" exact>
         <Aboutme/>
         </Route>
@@ -30,6 +37,7 @@ function App() {
         <Contact/>
         </Route>
         </Switch>
+        </AnimatePresence>
        
        
        

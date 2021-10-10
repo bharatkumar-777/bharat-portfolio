@@ -23,6 +23,7 @@ h2
 {
    font-size:2.2rem;
    font-weight: 400;
+   /* color:white; */
 }
 
 `
